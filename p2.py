@@ -8,18 +8,31 @@
 # functions
 
 def get_steps():
+    
+    print("Enter number of steps")
+    num_steps = int(input())
+    
     return -1
 
 
 def get_stride_inches():
+    
+    print("Enter stride distance in inches")
+    stride_length = int(input())
+    
     return -1
 
 
 def calculate_miles(steps, stride_inches):
+    
+    miles = num_steps * stride_length/63360
+    
     return -1
 
 
 def additional_steps_needed(steps):
+
+    
     return -1
 
 def miles_output_line(steps, miles):
