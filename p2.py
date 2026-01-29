@@ -1,6 +1,6 @@
 #      program: p2.py
-#         date:
-#       author:
+#         date: 1-29-26
+#       author: Mason Reeves
 #  description: Calculates miles walked from steps and stride length,
 #               and reports how far over or under 10,000 steps.
 #               Demonsrates use of return functions.
@@ -10,33 +10,35 @@
 def get_steps():
     
     print("Enter number of steps")
-    num_steps = int(input())
+    steps = int(input())
     
-    return -1
+    return steps
 
 
 def get_stride_inches():
     
     print("Enter stride distance in inches")
-    stride_length = int(input())
+    stride_inches = int(input())
     
-    return -1
+    
+    return stride_inches
 
 
 def calculate_miles(steps, stride_inches):
     
-    miles = num_steps * stride_length/63360
+    miles = steps * stride_inches/63360
     
-    return -1
-
-
-def additional_steps_needed(steps):
-
     
-    return -1
+    return miles
+
+
+def additional_steps_needed(steps):    
+    
+        
+    return 
 
 def miles_output_line(steps, miles):
-    msg = "miles walked"
+    msg = "You walked {steps} steps which is {miles} miles."
     return msg
 
 def steps_output_line( additional ):
@@ -62,4 +64,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# +------ do not modify this section ----------+
+# +------ do not modify this section ----------+ 
