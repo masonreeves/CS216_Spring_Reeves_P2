@@ -33,16 +33,17 @@ def calculate_miles(steps, stride_inches):
 
 
 def additional_steps_needed(steps):    
-    
+    if steps < 10000:
+        additional = 10000 - steps
         
-    return 
+    return additional
 
 def miles_output_line(steps, miles):
-    msg = "You walked {steps} steps which is {miles} miles."
+    msg = f"You walked {steps} steps which is {miles} miles."
     return msg
 
-def steps_output_line( additional ):
-    msg = "steps needed"
+def steps_output_line(additional):
+    msg = f"You need {additional} steps to reach 10,000"
     
     return msg
 
@@ -65,3 +66,4 @@ if __name__ == "__main__":
     main()
 
 # +------ do not modify this section ----------+ 
+
