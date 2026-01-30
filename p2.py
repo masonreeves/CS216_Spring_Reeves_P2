@@ -39,11 +39,11 @@ def additional_steps_needed(steps):
     return additional
 
 def miles_output_line(steps, miles):
-    msg = f"You walked {steps} steps which is {miles} miles."
+    msg = f"You walked {steps:.1f} steps which is {miles} miles."
     return msg
 
 def steps_output_line(additional):
-    msg = f"You need {additional} steps to reach 10,000"
+    msg = f"You need {additional:.,f} steps to reach 10,000"
     
     return msg
 
