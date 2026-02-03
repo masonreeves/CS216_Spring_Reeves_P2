@@ -111,5 +111,70 @@ print()
 
 # ---- add your tests here ----
 
+print("Test 7: calculate_miles(12000, 30)")
+expected = 5.68
+actual = round(p2.calculate_miles(12000, 30), 2)
+
+if actual == expected:
+    print("PASS: Test 7")
+else:
+    print("FAIL: Test 7")
+    print(" expected:", expected)
+    print(" actual:", actual)
+    
+print()
+
+print("Test 8: step_difference(12000)")
+expected = 2000
+actual = p2.additional_steps_needed(12000)
+
+if actual == expected:
+    print("PASS: Test 8")
+else:
+    print("FAIL: Test 8")
+    print(" expected:", expected)
+    print(" actual: ", actual)
+
+print()
+
+print("Test 9: additional_steps_needed(12000)")
+expected = 2000
+actual = p2.additional_steps_needed(12000)
+
+if actual == expected:
+    print("PASS: Test 9")
+else:
+    print("FAIL: Test 9")
+    print(" expected:", expected)
+    print(" actual: ", actual)
+    
+print()
+
+print("Test 10: miles_output(12000, 5.68)")
+expected = "You walked 12,000 steps which is 5.68 miles"
+actual = p2.miles_output_line(12000, 5.68)
+
+if actual == expected:
+    print("PASS: Test 10")
+else:
+    print("FAIL: Test 10")
+    print(" expected:", expected)
+    print(" actual: ", actual)
+
+print()
+
+print("Test 11: steps_output_line(-2000)")
+expected = "You were 2,000 steps over 10,000"
+actual = p2.steps_output_line(-2000)
+
+if actual == expected:
+    print("PASS: Test 11")
+else:
+    print("FAIL: Test 11")
+    print(" expected:", expected)
+    print(" actual: ", actual)
+
+print()
+
 
 
